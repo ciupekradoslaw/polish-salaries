@@ -1,24 +1,5 @@
 @import 'tailwindcss';
 
-/* Własne tokeny — używaj ich w całej aplikacji */
-@theme {
-  --color-primary:        #1B4332;
-  --color-primary-light:  #2D6A4F;
-  --color-primary-dark:   #0D2B1F;
-  --color-accent:         #C9A84C;
-  --color-accent-light:   #E8C97A;
-  --color-surface:        #F7F9F7;
-  --color-card:           #FFFFFF;
-  --color-border:         #E0E8E0;
-  --color-text-primary:   #0D1F0F;
-  --color-text-muted:     #8A9E87;
-
-  --font-display: "DM Serif Display", serif;
-  --font-body:    "DM Sans", sans-serif;
-  --font-mono:    "DM Mono", monospace;
-}
-
-/* CSS Variables — skrót do używania w szablonach przez var() */
 :root {
   --color-primary:        #1B4332;
   --color-primary-light:  #2D6A4F;
@@ -34,11 +15,25 @@
   --font-display: "DM Serif Display", serif;
   --font-body:    "DM Sans", sans-serif;
   --font-mono:    "DM Mono", monospace;
+}
 
-  --shadow-card:  0 2px 12px rgba(27, 67, 50, 0.08);
-  --radius-card:  16px;
+@theme {
+  --color-primary: var(--color-primary);
+  --color-primary-light: var(--color-primary-light);
+  --color-primary-dark: var(--color-primary-dark);
+  --color-accent: var(--color-accent);
+  --color-accent-light: var(--color-accent-light);
+  --color-surface: var(--color-surface);
+  --color-card: var(--color-card);
+  --color-border: var(--color-border);
+  --color-text-primary: var(--color-text-primary);
+  --color-text-muted: var(--color-text-muted);
+
+  --font-display: var(--font-display);
+  --font-body: var(--font-body);
+  --font-mono: var(--font-mono);
 }
 
 body {
-  font-family: var(--font-body);
+  font-family: var(--font-body), sans-serif;
 }
