@@ -1,1 +1,16 @@
-<p>salary-list works!</p>
+<section class="px-6 py-4 max-w-4xl mx-auto">
+  <h2 class="text-xl">Stanowiska publiczne</h2>
+
+  <div class="flex flex-col gap-3">
+    @for (salary of salaries(); track salary) {
+      <div class="card p-5 flex items-center justify-between cursor-pointer">
+        <div class="flex items-center gap-4">
+          <div
+            class="flex items-center justify-center rounded-full text-xl w-12 h-12 shrink-0 bg-primary-light text-white">
+            <mat-icon>{{ salary.icon }}</mat-icon>
+          </div>
+        </div>
+      </div>
+    }
+  </div>
+</section>

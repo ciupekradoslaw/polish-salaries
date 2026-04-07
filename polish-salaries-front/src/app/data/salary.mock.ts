@@ -1,11 +1,11 @@
-import { Salary } from '../models/salary.model';
+import { Salary } from '../models';
 
 export const SALARY_MOCK: Salary[] = [
   {
     id: 1,
     title: 'Prezydent',
     category: 'Polityka',
-    icon: '🇵🇱',
+    icon: 'person',
     gross: 25000,
     net: 18000,
     source: 'gov.pl',
@@ -16,7 +16,7 @@ export const SALARY_MOCK: Salary[] = [
     id: 2,
     title: 'Poseł',
     category: 'Polityka',
-    icon: '🏛️',
+    icon: 'account_balance',
     gross: 12400,
     net: 9000,
     source: 'sejm.gov.pl',
@@ -27,7 +27,7 @@ export const SALARY_MOCK: Salary[] = [
     id: 3,
     title: 'Nauczyciel',
     category: 'Edukacja',
-    icon: '📚',
+    icon: 'school',
     gross: 6000,
     net: 4500,
     source: 'MEN',
