@@ -9,3 +9,9 @@
     box-shadow: var(--shadow-hover);
   }
 }
+
+.salary-value {
+  font-family: var(--font-mono), monospace;
+  font-weight: 500;
+  color: var(--color-primary);
+}

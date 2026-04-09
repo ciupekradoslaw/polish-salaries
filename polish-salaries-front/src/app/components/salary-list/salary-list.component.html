@@ -1,5 +1,5 @@
 <section class="px-6 py-4 max-w-4xl mx-auto">
-  <h2 class="text-xl">Stanowiska publiczne</h2>
+  <h2 class="text-xl mb-5">Stanowiska publiczne</h2>
 
   <div class="flex flex-col gap-3">
     @for (salary of salaries(); track salary) {
@@ -8,6 +8,25 @@
           <div
             class="flex items-center justify-center rounded-full text-xl w-12 h-12 shrink-0 bg-primary-light text-white">
             <mat-icon>{{ salary.icon }}</mat-icon>
+          </div>
+          <div>
+            <div class="text-text-primary text-base font-medium">
+              {{ salary.title }}
+            </div>
+            <div class="text-xs text-text-muted mt-1">
+              {{ salary.category }}
+            </div>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-4">
+          <div class="text-right">
+            <div class="salary-value text-lg">
+              {{ salary.gross | number:'1.0-0' }} zł
+            </div>
+            <div class="text-xs text-text-muted">
+              brutto / mies.
+            </div>
           </div>
         </div>
       </div>
