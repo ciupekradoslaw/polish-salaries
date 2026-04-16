@@ -1,0 +1,18 @@
+<section class="max-w-4xl mx-auto px-4 py-6 space-y-6">
+  <div>
+    <h2 class="text-xl mb-5">
+      Popularne
+    </h2>
+    <div class="flex flex-wrap gap-2">
+      @for (job of chips(); track job.slug) {
+        <button
+          class="px-4 py-1.5 rounded-full text-sm border border-border
+                 bg-white text-text-muted hover:bg-primary hover:text-white
+                 hover:border-primary transition-colors duration-150">
+          {{ job.title }}
+        </button>
+      }
+    </div>
+  </div>
+
+</section>

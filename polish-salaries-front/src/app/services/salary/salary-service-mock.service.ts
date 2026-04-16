@@ -20,4 +20,12 @@ export class SalaryServiceMock extends SalaryService {
 
     return of(stats);
   }
+
+  override getBySlug(slug: string): Observable<Salary | undefined> {
+    return of(SALARY_MOCK.find((salary) => salary.slug === slug));
+  }
+
+  override getByTitle(title: string): Observable<Salary | undefined> {
+    return of(SALARY_MOCK.find((salary) => salary.title === title));
+  }
 }
