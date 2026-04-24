@@ -20,4 +20,8 @@ export class SalaryChipsComponent implements OnInit {
       .getAll()
       .subscribe((salaries) => this.chips.set(salaries));
   }
+
+  goTo(slug: string) {
+    this.router.navigate(['/stanowisko', slug]);
+  }
 }
