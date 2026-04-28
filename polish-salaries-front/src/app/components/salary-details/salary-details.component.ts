@@ -27,7 +27,7 @@ export class SalaryDetailsComponent implements OnInit {
           return;
         }
         this.salary.set(data);
-        // todo   load related
+        // todo load related
       });
     });
   }

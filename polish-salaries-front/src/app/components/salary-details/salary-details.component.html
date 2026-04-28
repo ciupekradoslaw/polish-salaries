@@ -1,1 +1,22 @@
-<p>salary-details works!</p>
+<section class="p-6 max-w-4xl mx-auto">
+  @if (notFound()) {
+    <div class="text-center text-red-500 text-xl">
+      Nie znaleziono takiego stanowiska
+    </div>
+  }
+
+  @if (salary(); as sal) {
+    <div class="space-y-6">
+      <div class="flex items-center gap-4">
+        <div>
+          <h1 class="text-3xl font-display text-primary">
+            {{ sal.title }}
+          </h1>
+          <div class="text-text-muted text-sm">
+            Źródło: {{ sal.source }}
+          </div>
+        </div>
+      </div>
+    </div>
+  }
+</section>
