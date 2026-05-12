@@ -2,10 +2,12 @@ import { Component, inject, OnInit, signal } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { SalaryService } from '../../services';
 import { Salary } from '../../models';
+import { MatIcon } from '@angular/material/icon';
+import { CurrencyPipe } from '@angular/common';
 
 @Component({
   selector: 'app-salary-details',
-  imports: [],
+  imports: [MatIcon, CurrencyPipe],
   templateUrl: './salary-details.component.html',
   styleUrl: './salary-details.component.css'
 })

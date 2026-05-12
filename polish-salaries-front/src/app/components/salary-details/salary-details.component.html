@@ -8,15 +8,53 @@
   @if (salary(); as sal) {
     <div class="space-y-6">
       <div class="flex items-center gap-4">
+        <mat-icon
+          class="rounded-xl bg-surface border border-border flex items-center justify-center text-[56px]! w-14! h-14! shrink-0 leading-none!">
+          {{ sal.icon }}
+        </mat-icon>
         <div>
-          <h1 class="text-3xl font-display text-primary">
+          <h1 class="text-3xl font-display text-primary flex items-center gap-2 flex-wrap">
             {{ sal.title }}
+            <span class="text-sm font-sans font-medium px-3 py-1 rounded-full"
+                  [class.bg-green-100]="sal.isAboveAverage"
+                  [class.text-green-800]="sal.isAboveAverage"
+                  [class.bg-red-100]="!sal.isAboveAverage"
+                  [class.text-red-800]="!sal.isAboveAverage">
+                {{ sal.isAboveAverage ? '↑ Powyżej średniej' : '↓ Poniżej średniej' }} {{ sal.vsAverage }}
+            </span>
           </h1>
           <div class="text-text-muted text-sm">
             Źródło: {{ sal.source }}
           </div>
         </div>
       </div>
+
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
+        <div class="bg-white border border-white/20 rounded-2xl p-5 text-center shadow-lg">
+          <p class="text-xs uppercase tracking-wider text-text-muted mb-1">Brutto</p>
+          <p class="text-2xl font-semibold text-text">{{ sal.gross | currency:'PLN':'symbol':'1.0-0' }}</p>
+          <p class="text-xs text-text-muted mt-1">miesięcznie</p>
+        </div>
+        <div class="bg-white border border-white/20 rounded-2xl p-5 text-center shadow-lg">
+          <p class="text-xs uppercase tracking-wider text-text-muted mb-1">Netto</p>
+          <p class="text-2xl font-semibold text-text">{{ sal.net | currency:'PLN':'symbol':'1.0-0' }}</p>
+          <p class="text-xs text-text-muted mt-1">"na rękę"</p>
+        </div>
+        <div class="bg-white border border-white/20 rounded-2xl p-5 text-center shadow-lg">
+          <p class="text-xs uppercase tracking-wider text-text-muted mb-1">vs średnia krajowa</p>
+          <p class="text-2xl font-semibold"
+             [class.text-green-700]="sal.isAboveAverage"
+             [class.text-red-700]="!sal.isAboveAverage">
+            {{ sal.vsAverage }}
+          </p>
+        </div>
+        <div class="bg-white border border-white/20 rounded-2xl p-5 text-center shadow-lg">
+          <p class="text-xs uppercase tracking-wider text-text-muted mb-1">Rocznie brutto</p>
+          <p class="text-2xl font-semibold text-text">{{ sal.gross * 12 | currency:'PLN':'symbol':'1.0-0' }}</p>
+        </div>
+      </div>
     </div>
+
+
   }
 </section>
