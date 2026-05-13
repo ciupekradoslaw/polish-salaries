@@ -1,10 +1,11 @@
 import { Component, DestroyRef, inject, output } from '@angular/core';
 import { debounceTime, distinctUntilChanged, Subject } from 'rxjs';
 import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
+import { StatsBarComponent } from '../stats-bar/stats-bar.component';
 
 @Component({
   selector: 'app-hero',
-  imports: [],
+  imports: [StatsBarComponent],
   templateUrl: './hero.component.html',
   styleUrl: './hero.component.css'
 })

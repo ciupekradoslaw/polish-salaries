@@ -4,10 +4,11 @@ import { SalaryService } from '../../services';
 import { Salary } from '../../models';
 import { MatIcon } from '@angular/material/icon';
 import { CurrencyPipe } from '@angular/common';
+import { CardComponent } from '../card/card.component';
 
 @Component({
   selector: 'app-salary-details',
-  imports: [MatIcon, CurrencyPipe],
+  imports: [MatIcon, CurrencyPipe, CardComponent],
   templateUrl: './salary-details.component.html',
   styleUrl: './salary-details.component.css'
 })
