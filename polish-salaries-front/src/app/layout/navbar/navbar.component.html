@@ -1,6 +1,7 @@
 <mat-toolbar class="flex items-center justify-between px-6 sticky top-0 z-100 border-b-2 border-accent">
   <span class="text-xl font-display">
-    Ile<span class="text-accent">Zarabia</span>.pl
+    {{ 'app.titlePrefix' | translate }}<span
+    class="text-accent">{{ 'app.titleAccent' | translate }}</span>{{ 'app.titleDomain' | translate }}
   </span>
   <div class="flex items-center gap-2">
     <span class="relative flex size-2">
