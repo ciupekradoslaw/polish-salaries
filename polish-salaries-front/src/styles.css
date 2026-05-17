@@ -12,6 +12,15 @@
   --color-text-primary: #0D1F0F;
   --color-text-muted: #8A9E87;
 
+  --color-surface-overlay: rgba(255, 255, 255, 0.06);
+  --color-surface-overlay-hover: rgba(255, 255, 255, 0.10);
+  --color-accent-subtle: rgba(201, 168, 76, 0.15);
+  --color-error-bg: rgba(220, 38, 38, 0.12);
+
+  --border-color-overlay: rgba(255, 255, 255, 0.13);
+  --border-color-accent-subtle: rgba(201, 168, 76, 0.35);
+  --border-color-error: rgba(220, 38, 38, 0.28);
+
   --font-display: "DM Serif Display", serif;
   --font-body: "DM Sans", sans-serif;
   --font-mono: "DM Mono", monospace;
@@ -31,6 +40,17 @@
   --color-border: var(--color-border);
   --color-text-primary: var(--color-text-primary);
   --color-text-muted: var(--color-text-muted);
+
+  --color-surface-overlay: var(--color-surface-overlay);
+  --color-surface-overlay-hover: var(--color-surface-overlay-hover);
+  --color-accent-subtle: var(--color-accent-subtle);
+  --color-error-bg: var(--color-error-bg);
+
+  --color-border-overlay: var(--color-border-overlay);
+  --color-border-accent-subtle: var(--color-border-accent-subtle);
+  --color-border-error: var(--color-border-error);
+  --color-error-text: var(--color-error-text);
+  --color-error-icon: var(--color-error-icon);
 
   --font-display: var(--font-display);
   --font-body: var(--font-body);
