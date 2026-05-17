@@ -1,25 +1,37 @@
 import { Routes } from '@angular/router';
-import { HomeComponent } from './pages/home/home.component';
-import { SalaryDetailsComponent } from './components/salary-details/salary-details.component';
-import { AdminLoginComponent } from './components/admin/admin-login/admin-login.component';
-import { MainLayoutComponent } from './layout/main-layout/main-layout.component';
 
 export const routes: Routes = [
   {
     path: '',
-    component: MainLayoutComponent,
+    loadComponent: () =>
+      import('./layout/main-layout/main-layout.component').then(
+        (m) => m.MainLayoutComponent
+      ),
     children: [
       {
         path: '',
-        component: HomeComponent,
-        children: [
-          { path: 'stanowisko/:slug', component: SalaryDetailsComponent }
-        ]
+        loadComponent: () =>
+          import('./pages/home/home.component').then((m) => m.HomeComponent)
+      },
+      {
+        path: 'stanowisko/:slug',
+        loadComponent: () =>
+          import('./components/salary-details/salary-details.component').then(
+            (m) => m.SalaryDetailsComponent
+          )
       }
     ]
   },
   {
     path: 'admin',
-    children: [{ path: 'login', component: AdminLoginComponent }]
+    children: [
+      {
+        path: 'login',
+        loadComponent: () =>
+          import('./components/admin/admin-login/admin-login.component').then(
+            (m) => m.AdminLoginComponent
+          )
+      }
+    ]
   }
 ];
