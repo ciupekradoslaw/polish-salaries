@@ -2,6 +2,12 @@
   "app": {
     "titlePrefix": "Ile",
     "titleAccent": "Zarabia",
-    "titleDomain": ".pl"
+    "titleDomain": ".pl",
+    "admin": {
+      "login": {
+        "administrationPanel": "Panel administracyjny",
+        "loginToManageYourData": "Zaloguj się, aby zarządzać danymi"
+      }
+    }
   }
 }

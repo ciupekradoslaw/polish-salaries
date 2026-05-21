@@ -9,12 +9,7 @@ export const routes: Routes = [
       ),
     children: [
       {
-        path: '',
-        loadComponent: () =>
-          import('./pages/home/home.component').then((m) => m.HomeComponent)
-      },
-      {
-        path: 'stanowisko/:slug',
+        path: 'position/:slug',
         loadComponent: () =>
           import('./components/salary-details/salary-details.component').then(
             (m) => m.SalaryDetailsComponent

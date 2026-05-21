@@ -22,6 +22,6 @@ export class SalaryChipsComponent implements OnInit {
   }
 
   goTo(slug: string) {
-    this.router.navigate(['/stanowisko', slug]);
+    this.router.navigate(['/position', slug]);
   }
 }
