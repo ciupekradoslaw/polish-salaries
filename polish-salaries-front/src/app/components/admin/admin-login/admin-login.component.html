@@ -8,6 +8,30 @@
 
       <h2 class="text-xl font-medium text-white mb-1">{{ 'app.admin.login.administrationPanel' | translate }}</h2>
       <p class="text-sm text-white/45 mb-7">{{ 'app.admin.login.loginToManageYourData' | translate }}</p>
+
+      <form (ngSubmit)="onSubmit()" class="flex flex-col gap-5">
+        <mat-form-field appearance="outline" class="w-full">
+          <mat-label>Login</mat-label>
+          <input matInput type="email" [formField]="loginForm.login" placeholder="admin@ilezarabia.pl"/>
+        </mat-form-field>
+
+        <mat-form-field appearance="outline" class="w-full">
+          <mat-label>Password</mat-label>
+          <input matInput type="password" [formField]="loginForm.password" placeholder="••••••••"/>
+        </mat-form-field>
+
+        <button mat-flat-button type="submit" class="w-full h-11 font-medium">
+          Zaloguj się
+        </button>
+      </form>
+
+      <mat-divider/>
+
+      <a routerLink="/"
+         class="flex items-center justify-center gap-1 text-sm text-white/35 hover:text-white/65 transition-colors">
+        <mat-icon class="text-base">arrow_back</mat-icon>
+        Wróć do strony głównej
+      </a>
     </div>
   </div>
 </div>

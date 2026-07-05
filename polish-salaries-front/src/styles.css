@@ -11,6 +11,8 @@
   --color-border: #E0E8E0;
   --color-text-primary: #0D1F0F;
   --color-text-muted: #8A9E87;
+  --color-error-text: #DC2626;
+  --color-error-icon: #DC2626;
 
   --color-surface-overlay: rgba(255, 255, 255, 0.06);
   --color-surface-overlay-hover: rgba(255, 255, 255, 0.10);
