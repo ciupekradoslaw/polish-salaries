@@ -6,7 +6,8 @@
     "admin": {
       "login": {
         "administrationPanel": "Panel administracyjny",
-        "loginToManageYourData": "Zaloguj się, aby zarządzać danymi"
+        "loginToManageYourData": "Zaloguj się, aby zarządzać danymi",
+        "password": "Hasło"
       }
     }
   }

@@ -1,16 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e7ab8f1e-bda9-4191-8469-91207f674bac" name="Changes" comment="Start of redesigning">
+    <list default="true" id="e7ab8f1e-bda9-4191-8469-91207f674bac" name="Changes" comment="Modifications in material-theme.scss">
+      <change afterPath="$PROJECT_DIR$/polish-salaries-front/src/app/store/auth/auth.actions.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/polish-salaries-front/src/app/store/auth/auth.state.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/polish-salaries-front/src/app/app.html" beforeDir="false" afterPath="$PROJECT_DIR$/polish-salaries-front/src/app/app.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/polish-salaries-front/src/app/app.routes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/polish-salaries-front/src/app/app.routes.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/polish-salaries-front/src/app/app.ts" beforeDir="false" afterPath="$PROJECT_DIR$/polish-salaries-front/src/app/app.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/polish-salaries-front/src/app/components/salary-chips/salary-chips.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/polish-salaries-front/src/app/components/salary-chips/salary-chips.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/polish-salaries-front/src/app/components/salary-chips/salary-chips.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/polish-salaries-front/src/app/components/salary-chips/salary-chips.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/polish-salaries-front/src/app/components/salary-details/salary-details.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/polish-salaries-front/src/app/components/salary-details/salary-details.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/polish-salaries-front/src/app/pages/home/home.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/polish-salaries-front/src/app/pages/home/home.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/polish-salaries-front/src/app/pages/home/home.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/polish-salaries-front/src/app/pages/home/home.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/polish-salaries-front/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/polish-salaries-front/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/polish-salaries-front/pnpm-lock.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/polish-salaries-front/pnpm-lock.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/polish-salaries-front/public/i18n/pl.json" beforeDir="false" afterPath="$PROJECT_DIR$/polish-salaries-front/public/i18n/pl.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/polish-salaries-front/src/app/components/admin/admin-login/admin-login.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/polish-salaries-front/src/app/components/admin/admin-login/admin-login.component.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,6 +33,10 @@
     &quot;accountId&quot;: &quot;8ee9bded-4b5e-4aae-b0c6-22caf1faf938&quot;
   }
 }</component>
+  <component name="KubernetesApiPersistence"><![CDATA[{}]]></component>
+  <component name="KubernetesApiProvider"><![CDATA[{
+  "isMigrated": true
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 0
 }</component>
@@ -54,6 +56,7 @@
     &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;javascript.preferred.runtime.type.id&quot;: &quot;node&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
@@ -74,6 +77,8 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/polish-salaries-front/src/app/store" />
+      <recent name="$PROJECT_DIR$/polish-salaries-front/src/app/components" />
       <recent name="$PROJECT_DIR$/polish-salaries-front/src/app/services/salary" />
     </key>
   </component>
@@ -97,8 +102,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-30f59d01ecdd-2fc7cc6b9a17-intellij.indexing.shared.core-IU-253.31033.145" />
-        <option value="bundled-js-predefined-d6986cc7102b-9b0f141eb926-JavaScript-IU-253.31033.145" />
+        <option value="bundled-jdk-30f59d01ecdd-37e91769500f-intellij.indexing.shared.core-IU-261.26222.65" />
       </set>
     </attachedChunks>
   </component>
@@ -116,6 +120,25 @@
       <workItem from="1777053875141" duration="9000" />
       <workItem from="1777053906781" duration="8000" />
       <workItem from="1777053925937" duration="1786000" />
+      <workItem from="1777062791606" duration="58000" />
+      <workItem from="1777400919199" duration="448000" />
+      <workItem from="1777401455974" duration="865000" />
+      <workItem from="1778403611621" duration="5341000" />
+      <workItem from="1778694465360" duration="1382000" />
+      <workItem from="1778781974951" duration="1339000" />
+      <workItem from="1779043590622" duration="3085000" />
+      <workItem from="1779386951409" duration="748000" />
+      <workItem from="1781448380016" duration="5000" />
+      <workItem from="1781448439518" duration="13000" />
+      <workItem from="1781448480046" duration="8000" />
+      <workItem from="1781448503100" duration="2986000" />
+      <workItem from="1781451731262" duration="1340000" />
+      <workItem from="1783274658371" duration="207000" />
+      <workItem from="1783274910261" duration="312000" />
+      <workItem from="1783275233861" duration="4681000" />
+      <workItem from="1788713203747" duration="4000" />
+      <workItem from="1788713281984" duration="16000" />
+      <workItem from="1788713314597" duration="6142000" />
     </task>
     <task id="LOCAL-00001" summary="Prepare components, add home and hero components layout">
       <option name="closed" value="true" />
@@ -149,7 +172,79 @@
       <option name="project" value="LOCAL" />
       <updated>1776370473131</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Start implementing salary-details component">
+      <option name="closed" value="true" />
+      <created>1777062830713</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1777062830713</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Display title and source in salary-details component">
+      <option name="closed" value="true" />
+      <created>1777402295208</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1777402295208</updated>
+    </task>
+    <task id="LOCAL-00007" summary="More details in salary-details component">
+      <option name="closed" value="true" />
+      <created>1778607798557</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1778607798557</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Create card component">
+      <option name="closed" value="true" />
+      <created>1778694561368</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1778694561368</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Setup ngx-translate">
+      <option name="closed" value="true" />
+      <created>1778782013610</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1778782013610</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Refactor layouts, start implementing login component">
+      <option name="closed" value="true" />
+      <created>1779047016029</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1779047016029</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Add lazy loading">
+      <option name="closed" value="true" />
+      <created>1779047767189</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1779047767189</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Small refactor in routing, removal of home component, continue implementing AdminLogin component">
+      <option name="closed" value="true" />
+      <created>1779387674991</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1779387674991</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Modifications in material-theme.scss">
+      <option name="closed" value="true" />
+      <created>1783280077147</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1783280077147</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -171,7 +266,16 @@
     <MESSAGE value="Start implementing salary-list component" />
     <MESSAGE value="Continue implementation of salary-list component, add pl locales" />
     <MESSAGE value="Start of redesigning" />
-    <option name="LAST_COMMIT_MESSAGE" value="Start of redesigning" />
+    <MESSAGE value="Start implementing salary-details component" />
+    <MESSAGE value="Display title and source in salary-details component" />
+    <MESSAGE value="More details in salary-details component" />
+    <MESSAGE value="Create card component" />
+    <MESSAGE value="Setup ngx-translate" />
+    <MESSAGE value="Refactor layouts, start implementing login component" />
+    <MESSAGE value="Add lazy loading" />
+    <MESSAGE value="Small refactor in routing, removal of home component, continue implementing AdminLogin component" />
+    <MESSAGE value="Modifications in material-theme.scss" />
+    <option name="LAST_COMMIT_MESSAGE" value="Modifications in material-theme.scss" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
